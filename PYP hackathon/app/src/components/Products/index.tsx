@@ -2,13 +2,14 @@ import bussinessIcon from '../../assets/img/Business2.png'
 import laptomIcon from '../../assets/img/Laptop2.png'
 import socialMediIcon from '../../assets/img/Group2.png'
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import { ProductsPaginationItem } from './ProductsPagination'
 import { Pagination } from 'react-bootstrap';
 import { useCallback } from 'react';
 import { useState } from 'react';
 export const Products = () => {
 
-    let pagesCount = 3;
-    let arr = [];
+    let pagesCount = 3
+    let arr: any[] = [];
     for (let i = 1; i <= pagesCount; i++) {
         arr.push(i);
     }
@@ -253,14 +254,10 @@ export const Products = () => {
                         <ul className="pagination">
                             <li className="page-item">
                                 <a className="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
+                                    <span>&laquo;</span>
                                 </a>
                             </li>
-
-                            {arr.map((d) => {
-                                return (<li className="page-item"><a className="page-link" href={`http://server/..../page?=${d}`}>{d}</a></li>)
-                            }
-                            )}
+                            <ProductsPaginationItem arr={arr} />
                             <li className="page-item">
                                 <a className="page-link" href="#" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
