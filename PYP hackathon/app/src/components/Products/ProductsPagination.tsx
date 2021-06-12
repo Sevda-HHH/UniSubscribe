@@ -6,7 +6,7 @@ interface IProps {
 export const ProductsPaginationItem: React.FC<IProps> = ({ arr }): any => {
     console.log(arr)
     return (arr.map((d: number) => {
-        return (<li key={d} className="page-item"><a className="page-link" href={`http://server/..../page?=${d}`}>{d}</a></li>)
+        return (<li key={d} className="page-item"><a className=" bg-purple text-dark  page-link" href={`http://server/..../page?=${d}`}><b>{d}</b></a></li>)
     }
     ))
 

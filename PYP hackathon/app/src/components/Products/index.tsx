@@ -253,14 +253,14 @@ export const Products = () => {
                     <nav aria-label="Page navigation example">
                         <ul className="pagination">
                             <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Previous">
-                                    <span>&laquo;</span>
+                                <a className="text-dark page-link" href="#" aria-label="Previous">
+                                    <b> <span>&laquo;</span></b>
                                 </a>
                             </li>
                             <ProductsPaginationItem arr={arr} />
                             <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
+                                <a className="text-dark page-link" href="#" aria-label="Next">
+                                    <b> <span aria-hidden="true">&raquo;</span></b>
                                 </a>
                             </li>
                         </ul>
