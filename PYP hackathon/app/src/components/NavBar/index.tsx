@@ -1,7 +1,7 @@
 import { SearchInput } from './SearchInput'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { AccountDropdown } from './AccountDropdown'
 export const NavBar = () => {
     return (
         <Navbar className="bg-purple" expand="lg">
@@ -18,8 +18,10 @@ export const NavBar = () => {
                             >
                                 <Link className="navLinks" to="/">Home</Link>
                                 <Link className="navLinks" to="/services">Services</Link>
+                                {/* burada shert lazimdir ki , eger user authenticated'dirse Account Icon Dropdown olsun , else 'Login' linki  */}
                                 <Link className="navLinks" to="/login">Login</Link>
-                                <Link className="navLinks  p-0 pt-2 pl-2" to="/login"><AccountCircleIcon className="text-white accountIcon" /></Link>
+                                <AccountDropdown />
+
 
                             </Nav>
                             </div>
@@ -33,5 +35,5 @@ export const NavBar = () => {
 
             </div>
 
-        </Navbar>)
+        </Navbar >)
 }
