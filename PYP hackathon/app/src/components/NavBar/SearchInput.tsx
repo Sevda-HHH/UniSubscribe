@@ -3,7 +3,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 export const SearchInput = () => {
     return (
-        <div className="col-lg-6">
+        <div className="col-lg-6 col-12">
             <Form className="d-flex">
                 <FormControl
                     type="search"

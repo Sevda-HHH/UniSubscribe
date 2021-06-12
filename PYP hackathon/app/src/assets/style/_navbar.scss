@@ -1,3 +1,8 @@
+@media screen and (max-width: 900px) {
+    .navLinksSerach {
+        justify-content: center !important;
+    }
+}
 .navSearch {
     border: none !important;
     background: white;
@@ -14,6 +19,10 @@
     color: black !important;
     text-decoration: none;
     padding: 10px;
+}
+.accountIcon {
+    font-size: 35px !important;
+    // margin-bottom: 5px;
 }
 .uniName {
     font-weight: bold;

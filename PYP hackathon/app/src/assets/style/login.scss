@@ -16,6 +16,25 @@ $bg-purple: #bcd1ff;
     --input-border-color: rgb(152, 169, 192);
     --paragraph-color: rgb(231, 231, 231);
 }
+@media screen and (max-width: 650px) {
+    #wrapper_Area {
+        display: none !important;
+    }
+    #mobilee {
+        overflow-x: hidden !important;
+
+        display: block !important;
+        background-color: white;
+    }
+    #body {
+        overflow-x: hidden !important;
+
+        height: 100% !important   ;
+    }
+    .aside__area {
+        background-color: white !important;
+    }
+}
 * {
     box-sizing: border-box;
     margin: 0;
